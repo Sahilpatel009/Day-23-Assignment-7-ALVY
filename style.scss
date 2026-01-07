@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .bottom{
+            width: 100%;
+        }
+    }
+}
