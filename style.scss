@@ -64,14 +64,14 @@ main {
 
             img {
                 width: 100%;
-                border-radius: 0.625rem;
+                border-radius: 0.7rem;
             }
         }
 
         .bottom {
             background-color: #242323;
             padding: 2.5rem;
-            border-radius: 0.625rem;
+            border-radius: 0.7rem;
             @include flex-column(2rem);
             gap: 3rem;
 
@@ -81,15 +81,15 @@ main {
 
                 h1 {
                     font-weight: 500;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     text-transform: uppercase;
                 }
 
                 p {
-                    font-weight: 300;
-                    opacity: 0.8;
-                    font-size: 1.7rem;
-                    line-height: 2rem;
+                   font-weight: 100rem;
+                    opacity: 0.6;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
                 }
 
                 button {
@@ -147,6 +147,44 @@ main {
         }
 
     }
+
+    section.view3 {
+        width: 100%;
+        padding: 1rem;
+        @include flex-column(1rem);
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 0.7rem;
+            }
+        }
+
+        .bottom {
+            background-color: #242323;
+            border-radius: 0.7rem;
+            padding: 1rem;
+
+            .text {
+                @include flex-column(0.7rem);
+
+                h1 {
+                    font-weight: 200;
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 100rem;
+                    opacity: 0.6;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width:900px) {
@@ -162,7 +200,8 @@ main {
             .alvy {
                 padding-right: 28rem;
                 font-weight: 100;
-                h2{
+
+                h2 {
                     font-size: 1.5rem;
                     font-weight: 350;
                 }
