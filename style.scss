@@ -167,12 +167,6 @@ main {
             border-radius: 0.7rem;
             padding: 2rem;
 
-            .paragraph {
-                font-size: 1.1rem;
-                font-weight: 400;
-                text-transform: uppercase;
-            }
-
             .text {
                 @include flex-column(0.7rem);
 
@@ -193,7 +187,15 @@ main {
                 }
             }
         }
+
+        .bottom>p {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
     }
+
     section.view4 {
         width: 100%;
         padding: 1rem;
@@ -213,12 +215,6 @@ main {
             border-radius: 0.7rem;
             padding: 2rem;
 
-            .paragraph {
-                font-size: 1.1rem;
-                font-weight: 400;
-                text-transform: uppercase;
-            }
-
             .text {
                 @include flex-column(0.7rem);
 
@@ -238,6 +234,13 @@ main {
                     margin-bottom: 1m;
                 }
             }
+        }
+
+        .bottom>p {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            font-weight: 400;
+            text-transform: uppercase;
         }
     }
 }
@@ -349,10 +352,6 @@ main {
             .bottom {
                 justify-content: space-between;
 
-                .paragraph {
-                    margin-bottom: 4rem;
-                }
-
                 .text {
                     h1 {
                         font-size: 3rem;
@@ -365,7 +364,12 @@ main {
                     }
                 }
             }
+
+            .bottom>p {
+                margin-bottom: 4rem;
+            }
         }
+
         section.view4 {
             flex-direction: row;
             padding: 1rem 4rem;
@@ -378,10 +382,6 @@ main {
             .bottom {
                 justify-content: space-between;
 
-                .paragraph {
-                    margin-bottom: 4rem;
-                }
-
                 .text {
                     h1 {
                         font-size: 3rem;
@@ -393,6 +393,10 @@ main {
                         gap: 2rem;
                     }
                 }
+            }
+
+            .bottom>p {
+                margin-bottom: 4rem;
             }
         }
     }
