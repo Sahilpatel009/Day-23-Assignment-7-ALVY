@@ -440,6 +440,22 @@ main section.view7 .text button i {
   font-size: 1rem;
   font-weight: 200;
 }
+main section.view8 {
+  border-radius: 0.7rem;
+  width: 100%;
+  padding: 0rem 1rem 1rem 1rem;
+}
+main section.view8 .text {
+  padding: 2rem;
+  border-radius: 0.7rem;
+  background-color: #242323;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main section.view8 .text h1 {
+  color: rgba(179, 174, 174, 0.3960784314);
+}
 
 @media (min-width: 900px) {
   main nav {
@@ -605,5 +621,22 @@ main section.view7 .text button i {
     bottom: 20%;
     font-size: 1rem;
     font-weight: 400;
+  }
+  main section.view8 {
+    padding: 0rem 4rem;
+  }
+  main section.view8 .text {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  main section.view8 .text h1 {
+    margin-bottom: 2rem;
+    font-size: 10rem;
+  }
+  main section.view8 .text p {
+    display: flex;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
