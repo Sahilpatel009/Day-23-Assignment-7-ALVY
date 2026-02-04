@@ -403,6 +403,43 @@ main section.view6 .bottom .text button:hover {
   background-color: #fff;
   cursor: pointer;
 }
+main section.view7 {
+  width: 100%;
+  padding: 0rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main section.view7 .text {
+  border-radius: 0.7rem;
+  background-color: #CEBD63;
+  padding: 2rem;
+}
+main section.view7 .text p {
+  color: #121212;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+main section.view7 .text h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(18, 18, 18, 0.8352941176);
+  margin-bottom: 1rem;
+}
+main section.view7 .text button {
+  padding: 1.4rem 8rem;
+  background-color: #121212;
+  color: white;
+  border-radius: 0.5rem;
+  word-spacing: 0.2rem;
+  border: none;
+}
+main section.view7 .text button i {
+  font-size: 1rem;
+  font-weight: 200;
+}
 
 @media (min-width: 900px) {
   main nav {
@@ -541,5 +578,32 @@ main section.view6 .bottom .text button:hover {
   }
   main section.view6 .bottom .text .button {
     size: 2rem;
+  }
+  main section.view7 {
+    padding: 0rem 4rem;
+  }
+  main section.view7 .text {
+    padding: 3rem;
+    position: relative;
+  }
+  main section.view7 .text p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-weight: 450;
+  }
+  main section.view7 .text h1 {
+    color: #121212;
+    font-size: 4.6rem;
+    font-weight: 400;
+    max-width: 55rem;
+    letter-spacing: 0.1rem;
+  }
+  main section.view7 .text button {
+    position: absolute;
+    padding: 1.3rem 2.5rem;
+    left: 80%;
+    bottom: 20%;
+    font-size: 1rem;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=style.css.map */
