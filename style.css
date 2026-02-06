@@ -34,13 +34,33 @@ main {
 main nav {
   width: 100%;
   display: flex;
+  align-items: center;
+  padding: 1rem 1rem 0rem 1.5rem;
 }
 main nav .alvy h2 {
-  font-size: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6156862745);
 }
 main nav .button button {
   padding: px 1px;
   font-size: 0.1rem;
+}
+main nav .hamburger {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #1E1E1E;
+  border-radius: 0.5rem;
+}
+main nav .hamburger i {
+  font-size: 2rem;
+  font-weight: 100;
+}
+main nav .hamburger:hover {
+  cursor: pointer;
+  background-color: #3b3939;
+}
+main nav .hamburger:hover i {
+  color: rgba(194, 161, 14, 0.582);
 }
 main section.view1 {
   width: 100%;
@@ -638,5 +658,33 @@ main section.view8 .text h1 {
   main section.view8 .text p {
     display: flex;
     margin-bottom: 1rem;
+  }
+}
+nav .hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 899px) {
+  nav {
+    justify-content: space-between;
+  }
+  nav #button {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background: #1e1e1e;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+  }
+  nav #button.active {
+    display: flex;
+  }
+  nav .hamburger {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
