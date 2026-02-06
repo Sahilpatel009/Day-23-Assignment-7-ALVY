@@ -39,7 +39,7 @@ main {
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 1rem 1rem 0rem 1.5rem;
+
 
         .alvy {
             h2 {
@@ -48,35 +48,6 @@ main {
                 color: #ffffff9d;
             }
         }
-
-        .button {
-            button {
-                padding: px 1px;
-                font-size: 0.1rem;
-            }
-        }
-
-        .hamburger {
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            background-color: #1E1E1E;
-            border-radius: 0.5rem;
-
-            i {
-                font-size: 2rem;
-                font-weight: 100;
-            }
-        }
-
-        .hamburger:hover {
-            cursor: pointer;
-            background-color: #3b3939;
-
-            i {
-                color: rgba(194, 161, 14, 0.582);
-            }
-        }
-
-
     }
 
 
@@ -516,6 +487,10 @@ main {
                     font-weight: 200;
                 }
             }
+             button:hover {
+                    background-color: white;
+                    color: black;
+                }
         }
     }
 
@@ -530,6 +505,7 @@ main {
             background-color: #242323;
             align-items: center;
             display: flex;
+            gap: 1rem;
             justify-content: space-between;
 
             h1 {
@@ -542,7 +518,6 @@ main {
 @media (min-width:900px) {
     main {
         nav {
-            padding: 0rem 4rem;
             width: 100%;
             display: flex;
             justify-content: end;
@@ -559,31 +534,42 @@ main {
                 }
             }
 
-            #button {
+            #links {
                 display: flex;
                 gap: 0.5rem;
 
-                button {
+                a {
                     background-color: #1E1E1E;
                     color: white;
                     border: none;
                     outline: none;
                     padding: 1.1rem 1.7rem;
                     border-radius: 0.5rem;
+                    text-transform: uppercase;
 
+                }
+
+                a:hover {
+                    background-color: #383737;
                 }
 
                 #button-1 {
-                    button {
-                        background-color: #CEBD63;
-                        color: black;
-                        border: none;
-                        outline: none;
-                        padding: 1.1rem 1.7rem;
-                        border-radius: 0.5rem;
-
-                    }
+                    background-color: #CEBD63;
+                    color: black;
+                    border: none;
+                    outline: none;
+                    padding: 1.1rem 1.7rem;
+                    border-radius: 0.5rem;
+                    text-transform: uppercase;
+                    word-spacing: 0.5rem;
+                    font-weight: 400;
                 }
+
+                #button-1:hover {
+                    background-color: #81763c;
+                }
+
+
 
                 button:hover {
                     cursor: pointer;
@@ -780,35 +766,48 @@ main {
     }
 }
 
-nav {
-    .hamburger {
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 4rem;
+    position: relative;
+
+    #links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .icon {
         display: none;
         font-size: 1.8rem;
         cursor: pointer;
     }
 }
 
-@media (max-width: 899px) {
-    nav {
-        justify-content: space-between;
-
-        #button {
+@media (max-width: 900px) {
+    .topnav {
+        #links {
             display: none;
+            flex-direction: column;
             position: absolute;
             top: 100%;
             right: 1rem;
             background: #1e1e1e;
-            flex-direction: column;
-            gap: 0.7rem;
             padding: 1rem;
             border-radius: 0.7rem;
         }
 
-        #button.active {
+        &.responsive #links {
             display: flex;
         }
 
-        .hamburger {
+        .icon {
             display: block;
         }
     }

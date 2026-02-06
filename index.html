@@ -5,34 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALVY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <div class="alvy">
                 <h2>ALVY</h2>
             </div>
-
-            <div id="button">
-                <button>PROJECTS</button>
-                <button>SERVICES</button>
-                <button>STUDIO</button>
-                <button>BLOG</button>
-                <button>PAGES</button>
-                <button>CART</button>
-                <div id="button-1">
-                    <button>GET IN TOUCH</button>
-                </div>
+            <div id="links">
+                <a href="#">Projects</a>
+                <a href="#">Services</a>
+                <a href="#">Studio</a>
+                <a href="#">Blog</a>
+                <a href="#">Pages</a>
+                <a href="#">Cart</a>
+                <a id="button-1" href="#" class="btn">Get in Touch</a>
             </div>
-
-            <div class="hamburger" id="hamburger">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
                 <i class="ri-menu-3-line"></i>
-            </div>
+            </a>
         </nav>
-
         <section class="view1">
             <div class="top">
                 <img src="./studio-hero.webp" alt="studio-hero">
@@ -186,6 +182,11 @@
         </section>
     </main>
     <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("myTopnav").classList.toggle("responsive");
+        }
+    </script>
 </body>
 
 </html>

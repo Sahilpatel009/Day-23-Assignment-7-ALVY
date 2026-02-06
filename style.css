@@ -35,32 +35,11 @@ main nav {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1rem 1rem 0rem 1.5rem;
 }
 main nav .alvy h2 {
   font-size: 1.5rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6156862745);
-}
-main nav .button button {
-  padding: px 1px;
-  font-size: 0.1rem;
-}
-main nav .hamburger {
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #1E1E1E;
-  border-radius: 0.5rem;
-}
-main nav .hamburger i {
-  font-size: 2rem;
-  font-weight: 100;
-}
-main nav .hamburger:hover {
-  cursor: pointer;
-  background-color: #3b3939;
-}
-main nav .hamburger:hover i {
-  color: rgba(194, 161, 14, 0.582);
 }
 main section.view1 {
   width: 100%;
@@ -460,6 +439,10 @@ main section.view7 .text button i {
   font-size: 1rem;
   font-weight: 200;
 }
+main section.view7 .text button:hover {
+  background-color: white;
+  color: black;
+}
 main section.view8 {
   border-radius: 0.7rem;
   width: 100%;
@@ -471,6 +454,7 @@ main section.view8 .text {
   background-color: #242323;
   align-items: center;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
 }
 main section.view8 .text h1 {
@@ -479,7 +463,6 @@ main section.view8 .text h1 {
 
 @media (min-width: 900px) {
   main nav {
-    padding: 0rem 4rem;
     width: 100%;
     display: flex;
     justify-content: end;
@@ -494,27 +477,37 @@ main section.view8 .text h1 {
     font-size: 1.5rem;
     font-weight: 350;
   }
-  main nav #button {
+  main nav #links {
     display: flex;
     gap: 0.5rem;
   }
-  main nav #button button {
+  main nav #links a {
     background-color: #1E1E1E;
     color: white;
     border: none;
     outline: none;
     padding: 1.1rem 1.7rem;
     border-radius: 0.5rem;
+    text-transform: uppercase;
   }
-  main nav #button #button-1 button {
+  main nav #links a:hover {
+    background-color: #383737;
+  }
+  main nav #links #button-1 {
     background-color: #CEBD63;
     color: black;
     border: none;
     outline: none;
     padding: 1.1rem 1.7rem;
     border-radius: 0.5rem;
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+    font-weight: 400;
   }
-  main nav #button button:hover {
+  main nav #links #button-1:hover {
+    background-color: #81763c;
+  }
+  main nav #links button:hover {
     cursor: pointer;
     background-color: #353434;
   }
@@ -660,31 +653,42 @@ main section.view8 .text h1 {
     margin-bottom: 1rem;
   }
 }
-nav .hamburger {
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 4rem;
+  position: relative;
+}
+.topnav #links {
+  display: flex;
+  gap: 1rem;
+}
+.topnav a {
+  color: white;
+  text-decoration: none;
+}
+.topnav .icon {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
 }
 
-@media (max-width: 899px) {
-  nav {
-    justify-content: space-between;
-  }
-  nav #button {
+@media (max-width: 900px) {
+  .topnav #links {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     right: 1rem;
     background: #1e1e1e;
-    flex-direction: column;
-    gap: 0.7rem;
     padding: 1rem;
     border-radius: 0.7rem;
   }
-  nav #button.active {
+  .topnav.responsive #links {
     display: flex;
   }
-  nav .hamburger {
+  .topnav .icon {
     display: block;
   }
 }/*# sourceMappingURL=style.css.map */
