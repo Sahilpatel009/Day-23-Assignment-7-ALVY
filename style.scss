@@ -18,6 +18,7 @@ html {
 
 body {
     background-color: #131212;
+    overflow-x: hidden;
 }
 
 @mixin flex-column($gap: 0rem) {
@@ -487,10 +488,11 @@ main {
                     font-weight: 200;
                 }
             }
-             button:hover {
-                    background-color: white;
-                    color: black;
-                }
+
+            button:hover {
+                background-color: white;
+                color: black;
+            }
         }
     }
 
