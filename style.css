@@ -36,6 +36,7 @@ main nav {
   width: 100%;
   display: flex;
   align-items: center;
+  margin: 1rem 0rem;
 }
 main nav .alvy h2 {
   font-size: 1.5rem;
@@ -426,7 +427,7 @@ main section.view7 .text h1 {
   margin-bottom: 1rem;
 }
 main section.view7 .text button {
-  padding: 1.4rem 8rem;
+  padding: 1.4rem 4rem;
   background-color: #121212;
   color: white;
   border-radius: 0.5rem;
@@ -457,6 +458,10 @@ main section.view8 .text {
 }
 main section.view8 .text h1 {
   color: rgba(179, 174, 174, 0.3960784314);
+  font-size: 1.5rem;
+}
+main section.view8 .text p {
+  font-size: 0.6rem;
 }
 
 @media (min-width: 900px) {
